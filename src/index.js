@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import data from './expo_pavilions.json'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+// const DATA = [
+//     { id: "pavilion-0", name: "Cyprus", completed: true },
+//     { id: "pavilion-1", name: "Poland", completed: false },
+//     { id: "pavilion-2", name: "Austria", completed: false }
+// ];
+
+
+ReactDOM.render(<App pavilions={data} />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
